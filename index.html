@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title-web">Zingmp3</title>
+    <link rel="icon" href="./music/img/icon_zing_mp3_60.png"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Source+Serif+Pro&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./FA5PRO-master/css/all.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css"/>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reponsive.css">
+    <link rel="shortcut icon" href="#" />
+    
+</head>
+<body>
+    <div class="grid ">
+        <div class="container">
+            <div class=" sidebar">
+                <div class="sidebar-brand">
+                    <div class="sidebar-item zmp-logo">
+                        
+                    </div>
+                </div>
+                <div class="sidebar-list-wrap">
+                    <div class="sidebar-list-one">
+                        <ul>
+                            <li title="Cá nhân" class="sidebar-tiem"> 
+                                <i class=" sidebar-icon far fa-album-collection"></i>
+                                 <span>Cá nhân</span>
+                            </li>
+                            <li title="Khám phá" class="sidebar-tiem"> 
+                                <i class="  sidebar-icon fal fa-record-vinyl"></i>
+                                <span>Khám phá</span>
+                            </li>
+                            <li title="#zingchart" class="sidebar-tiem"> 
+                                <i class=" sidebar-icon fas fa-analytics"></i>
+                               <span> #zingchart</span>
+                               <i class="play-icon fa-regular fa-circle-play"></i>
+                            </li>
+                            <li title="Radio" class="sidebar-tiem"> 
+                                <i class=" sidebar-icon fas fa-radar"></i>
+                                <span>Radio</span>
+                                <span class="lable">LIVE</span>
+                                <i class="play-icon fa-regular fa-circle-play"></i>
+                            </li>
+                            <li title="Theo Dõi" class="sidebar-tiem"> 
+                                <i class=" sidebar-icon far fa-newspaper"></i>
+                                <span>Theo Dõi</span>
+                            </li>
+                        </ul>
+                        <div class="sidebar-divide"></div>
+                    </div>
+                   <div class="sidebar-list-two">
+                        <div class="sidebar-list-two__wrap ">
+                            <ul class="sidebar-wrap-item">
+                                <li title="Nhạc Mới" class="sidebar-tiem"> <i class=" sidebar-icon fas fa-music"></i>
+                                    <span>Nhạc Mới</span>
+                                    <i class="play-icon fa-regular fa-circle-play"></i>
+                                </li>
+                                <li title="Thể loại" class="sidebar-tiem"> 
+                                    <i class=" sidebar-icon fas fa-closed-captioning"></i>
+                                    <span>Thể loại</span>
+                                </li>
+                                <li title="Top 100" class="sidebar-tiem"> 
+                                    <i class=" sidebar-icon far fa-star"></i>
+                                    <span>Top 100</span>
+                                </li>
+                                <li title="MV" class="sidebar-tiem"> 
+                                    <i class=" sidebar-icon fas fa-closed-captioning"></i>
+                                   <span> MV</span>
+                                </li>
+                            </ul>
+                            <div class="tab tab-login">
+                                <p class="tittle">Đăng nhập để khám phá playlist dành riêng cho bạn</p>
+                                <button class="btn-primary btn-login">Đăng nhập</button>
+                            </div>
+                            <div class="tab tab-update-vip">
+                                <p class="tittle">Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                                <button class="btn-primary btn-update-vip">NÂNG CẤP VIP</button>
+                            </div>
+                        </div>
+                        <div class="scroll-sidebar"></div>
+                   </div>
+                </div>
+                <div class="add-playlist">
+                    <div>
+                        <i  class="add-playlist-icon far fa-plus"></i>
+                        <span>Tạo playlist mới</span>
+                    </div>
+                </div>
+                <div class="btn-expanded">
+                    <i class=" icon-expanded ti-angle-right"></i>
+                </div>
+            </div>
+            <div class="main">
+                <div class="header-sreach">
+                    <div class="directional-seach">
+                        <i class="btn-directional fa-thin fa-arrow-left none-user"></i>
+                        <i class="btn-directional btn-directional--active fa-thin fa-arrow-right"></i>
+                        <div class="sreach-wrap">
+                            <i class="fa-regular fa-magnifying-glass"></i>
+                            <input  spellcheck="false"  class="sreach-input" type="text" placeholder="Tìm kiếm bài hát, nghệ sĩ, lời bài hát...">
+                            <i class="delete-data-input fa-light fa-xmark"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="setting-list">
+                        <button id="tippy-topic"  class="setting-item setting-item-sreach" >                          
+                            <svg width="20" height="20" viewBox="0 0 20 20"><defs><linearGradient id="j32lhg93hd" x1="62.206%" x2="18.689%" y1="70.45%" y2="39.245%"><stop offset="0%" stop-color="#F81212"></stop><stop offset="100%" stop-color="red"></stop></linearGradient><linearGradient id="hjoavsus6g" x1="50%" x2="11.419%" y1="23.598%" y2="71.417%"><stop offset="0%" stop-color="#00F"></stop><stop offset="100%" stop-color="#0031FF"></stop></linearGradient><linearGradient id="la1y5u3dvi" x1="65.655%" x2="25.873%" y1="18.825%" y2="56.944%"><stop offset="0%" stop-color="#FFA600"></stop><stop offset="100%" stop-color="orange"></stop></linearGradient><linearGradient id="2dsmrlvdik" x1="24.964%" x2="63.407%" y1="8.849%" y2="55.625%"><stop offset="0%" stop-color="#13EFEC"></stop><stop offset="100%" stop-color="#00E8DF"></stop></linearGradient><filter id="4a7imk8mze" width="230%" height="230%" x="-65%" y="-65%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="301mo6jeah" width="312.7%" height="312.7%" x="-106.4%" y="-106.4%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="b2zvzgq7fj" width="295%" height="295%" x="-97.5%" y="-97.5%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><filter id="a1wq161tvl" width="256%" height="256%" x="-78%" y="-78%" filterUnits="objectBoundingBox"><feGaussianBlur in="SourceGraphic" stdDeviation="3.9"></feGaussianBlur></filter><path id="qtpqrj1oda" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path><path id="jggzvnjgfc" d="M0 0H20V20H0z"></path><path id="2eiwxjmc7m" d="M3.333 14.167V5.833l-1.666.834L0 3.333 3.333 0h3.334c.04 1.57.548 2.4 1.524 2.492l.142.008C9.403 2.478 9.958 1.645 10 0h3.333l3.334 3.333L15 6.667l-1.667-.834v8.334h-10z"></path></defs><g fill="none" fill-rule="evenodd" transform="translate(2 3)"><mask id="tinejqaasb" fill="#fff"><use xlink:href="#qtpqrj1oda"></use></mask><use fill="#FFF" fill-opacity="0" xlink:href="#qtpqrj1oda"></use><g mask="url(#tinejqaasb)"><g transform="translate(-2 -3)"><mask id="uf3ckvfvpf" fill="#fff"><use xlink:href="#jggzvnjgfc"></use></mask><use fill="#D8D8D8" xlink:href="#jggzvnjgfc"></use><circle cx="8.9" cy="6.8" r="9" fill="url(#j32lhg93hd)" filter="url(#4a7imk8mze)" mask="url(#uf3ckvfvpf)"></circle><circle cx="9.3" cy="13.7" r="5.5" fill="url(#hjoavsus6g)" filter="url(#301mo6jeah)" mask="url(#uf3ckvfvpf)"></circle><circle cx="15.9" cy="6.9" r="6" fill="url(#la1y5u3dvi)" filter="url(#b2zvzgq7fj)" mask="url(#uf3ckvfvpf)"></circle><circle cx="16.4" cy="17.7" r="7.5" fill="url(#2dsmrlvdik)" filter="url(#a1wq161tvl)" mask="url(#uf3ckvfvpf)"></circle></g></g><use fill="#FFF" fill-opacity="0.05" xlink:href="#2eiwxjmc7m"></use></g></svg>
+                        </button>
+                                             
+                        <button id="tippy-vip" class="setting-item setting-item-sreach">
+                            <i class="fa-light fa-gem"></i>
+                        </button>
+                                            
+                        <button id="tippy-upload"  class=" upload-feature setting-item setting-item-sreach">
+                            <i class="fa-regular fa-upload"></i>
+                        </button>
+                                       
+                        <button id="tippy-setting"  class="setting-item setting-item-sreach">
+                            <i class="fa-regular fa-gear"></i>
+                        </button>
+
+                        <button  class="setting-item avartar">
+                            <img src="https://avatar.talk.zdn.vn/default" alt="">
+                        </button>                      
+                    </div>
+                </div>
+                <div class="body-media">
+                    <div class="wrap-body">
+                        <div class="body-content">
+                            <div class="media-playlist">
+                                <div class="album-current">
+                                    <div class="wrap-thumbail play-audio">
+                                        <div class="thumbail ">
+                                            <img class="album-img" src="https://photo-resize-zmp3.zmdcdn.me/w600_r1x1_webp/cover/a/8/a/a/a8aa3b76a22b85698c6693e7246b8769.jpg" alt="">
+                                            <div class="background-black">
+                                            </div>
+                                           
+                                        </div>
+                                        <div class="icon-play-album play-audio">
+                                            <i class="fa-thin fa-play on-play"></i>
+                                            <img class="gif-play on-pause" src="./picutre/icon-playing.gif" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="info-album">
+                                        <div>
+                                            <h2 class="name-ablum">Cover Việt ngày nay</h2>
+                                        <div class="day-update">
+                                            
+                                        </div>
+                                        <div class="name-singers name-singers-ablum">
+                                            <p>Bùi Anh Tuấn</p>,
+                                            <p>Trung Quân</p>,
+                                            <p>Hà Nhi</p>,
+                                            <P>Văn Mai Hương</P>,
+                                            <P>Uyên Linh</P>
+                                        </div>
+                                        <span class="number-person-likes">20K người yêu thích</span>
+                                        </div>
+                                        <div>
+                                            <div class="play-ablum">
+                                                <button class="btn-play play-audio">
+                                                    <span class="on-play"><i style="margin-right: 10px;" class="fa-light fa-play"></i>Tiếp tục phát</span>
+                                                    <span class="on-pause"><i style="margin-right: 10px;" class="fa-duotone fa-pause"></i>Tạm Dừng</span>
+                                                </button>
+                                            </div>
+                                            <div class="feature-list">
+                                                <button id="tippy-love" class="favourite-song setting-item">
+                                                    <i class="fal fa-heart"></i>
+                                                </button>
+                                                <button id="tippy-more" class="more-setting setting-item">
+                                                    <i class="far fa-ellipsis-h"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <div class="playlist-content">
+                                    <div class="wrap-playlist">
+                                        <div class="description">
+                                            <span>Lời tựa</span> cover Việt mới nhất đều cập nhập tại đây
+                                        </div>
+                                        <div class="wrap-list-song">
+                                            <div class="header-list-song">
+                                                <div class="header-left">
+                                                    <div class="wrap-sort">
+                                                        <i class=" icon-sort-song fa-light fa-arrow-up-big-small"></i> 
+                                                        <ul class="list-sort ">
+                                                            <li class="sort-type sort-type--default">Mặc định</li>
+                                                            <li class="sort-type sort-type--name-song">Tên bài hát (A-Z)</li>
+                                                            <li class="sort-type sort-type--singer">Tên ca sĩ (A-Z)</li>
+                                                            <li class="sort-type sort-type--album">Tên Album (A-Z)</li>
+                                                        </ul>
+                                                    </div>
+                                                    <span>BÀI HÁT</span>
+                                                </div>
+                                                <div class="header-center">
+                                                    <span>ALBUM</span>
+                                                </div>
+                                                <div class="header-right">
+                                                    <span>THỜI GIAN</span>
+                                                </div>
+                                            </div>
+                                            <div class="list-song">
+                                            </div>                                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel-card mt-50">
+                                <div class="header-card">
+                                    <h2>Nghệ sĩ tham gia</h2>
+                                </div>
+                                <div class="body-card-artist">
+                                    <div class="wrap-card-artist">     
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel-card mt-50">
+                                <div class="header-card">
+                                    <h2>Có thể bạn quan tâm</h2>
+                                </div>
+                                <div class="body-card-playlist">
+                                    <div class="wrap-card-playlist">     
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="channel-card mt-50">
+                                <div class="header-card">
+                                    <h2>V-Pop</h2>
+                                </div>
+                                <div class="body-card-playlist">
+                                    <div class="wrap-card-playlist wrap-card-vpop">     
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-50"></div>
+                        </div>
+                    </div>
+                </div>
+                <audio id="audio" src=""></audio>
+            </div>
+        </div>
+        <div class="now-playing-bar">
+               <div class="player-controls__container">
+                    <div class="player-album-current">
+                        <div class="player-album-current__picture">
+                            <img src="https://photo-resize-zmp3.zmdcdn.me/w240_r1x1_webp/cover/2/0/f/6/20f645cbdffa5f37dba8bf7b61e599c6.jpg" alt="">
+                        </div>
+                        <div class="player-album-current__info">
+                           <div class="wrap-album-current__name-song" >
+                               
+                           </div>
+                            <div class="name-singers name-singer-current">
+                                <p >Trung Quân</p>
+                            </div>
+                        </div>
+                        <div class="player__list-features-one">
+                            <button id="tippy-love" class="setting-item feature feature--love"><i class="fa-light fa-heart"></i></button>
+                            <button id="tippy-more" class="setting-item feature feature--more"><i class="fa-regular fa-ellipsis"></i></button>
+                        </div>
+                    </div>
+                    
+                    <div class="player-controls__song">
+                        <div class="btn-control">
+                            <button id="tippy-random" class="setting-item btn-random btn-hover "><i class="fa-light fa-shuffle"></i></i></button>
+                            <button class="setting-item btn-hover btn-prew"><i class="fa-solid fa-backward-step"></i></button>
+                            <div class="setting-item btn-control-play play-audio">
+                                <i class="fa-thin fa-circle-play on-play"></i>
+                                <i class="fa-thin fa-circle-pause on-pause"></i>
+                            </div>
+                            <button  class="setting-item btn-hover btn-next"><i class="fa-solid fa-forward-step"></i></button>                          
+                            <button id="repeat-all"  class="setting-item btn-hover btn-repeat"><i  class="fa-light fa-repeat"></i></button>
+                        </div>
+                        <div class="duration controll-song"> 
+                            <span class="time-song-run time">00:00</span>
+                            <div class="wrap-input-progress ">
+                                <div class="progress progress-hover"> 
+                                    <div class="slider progress-controll-song slider-hover" ></div>
+                                </div>
+                            </div>
+                            <span class="total-time-song time">00:00</span>
+                        </div>
+                    </div>
+                    <div class="player__list-features-two">
+                        <button class=" none-user setting-item btn-hover feature feature--MV">
+                            <i class="fa-regular fa-clapperboard-play"></i>
+                        </button>
+                        <button id="tippy-show-lyric" class="setting-item btn-hover feature feature--show-lyris">
+                            <i class="fa-light fa-microphone-stand"></i>
+                        </button>
+                        <button id="tippy-window-mode" class="setting-item btn-hover feature feature--regime-widow">
+                            <i class="fal fa-tv-music"></i>
+                        </button>
+                        <div class="wrap-feature-volume">
+                            <button class="setting-item btn-hover feature feature--volume">
+                                <i class="fal fa-volume on-volume"></i>
+                                <i class="fal fa-volume-mute mute-volume"></i>
+                            </button>
+                            <div class="duration volume-change" > 
+                                <div class="wrap-input-volume level-volume">   
+                                    <div class=" volume volume-control volume-hover"> 
+                                        <div class=" dot-setting-volume dot-adjust-volume dot-volume-hover" aria-valuenow="100" aria-valuemax="100" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div  class="separator-line"></div>
+                        <button id="tippy-playlist" class="setting-item feature feature-playlist " >
+                            <i class="fa-light fa-list-music"></i>
+                        </button>
+                        
+                    </div>
+               </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="./app.js"></script>
+    
+</body>
+</html>
+

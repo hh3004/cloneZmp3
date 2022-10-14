@@ -1,0 +1,279 @@
+@media (max-width:1350px) {
+    .card-playlist,
+    .card-artist{
+        width: 25%;
+    }
+    
+}
+
+@media (max-width: 1175px){
+    .player__list-features-two{
+        justify-content: flex-end;
+
+    }
+    .wrap-feature-volume{
+        position: relative;
+        cursor: pointer;
+    }
+    .volume-change{
+        width: 150px;
+        position: absolute;
+        top: -122%;
+        padding: 14px;
+        border-radius: 4px;
+        background-color: #353535;
+        left: -60px;
+       visibility: hidden;
+    }
+
+    .volume.volume-control{
+        min-width: 100%;
+        height: 5px;
+    }
+    .separator-line{
+        margin: 0 15px 0 4px;
+    }
+    .dot-setting-volume{
+        
+    }
+
+    .wrap-feature-volume::before{
+        content: '';
+        height: 25px;
+        width: 35px;
+       
+        position: absolute;
+        top: -25px;
+        left: 4px;
+    }
+
+    .wrap-feature-volume:hover  .volume-change{
+        visibility: visible;
+    }
+
+    .wrap-feature-volume:hover  .dot-setting-volume{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 1199px){
+    .playlist-content{
+        margin: 0;
+    }
+    .media-playlist{
+        display: block;
+    }
+    .album-current{
+        position: relative;
+        top: 0;
+    }
+
+    .album-current{
+        width: 100%;
+        display: flex;
+    }
+
+    .wrap-thumbail{
+        width: 200px;
+        flex-shrink: 0;
+    }
+    .thumbail{
+        height: 200px;
+       
+    }
+
+    .info-album{
+        text-align: left;
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 0;
+    }
+
+    .play-ablum{
+        margin: 0;
+        display: inline-block;
+    }
+
+    .feature-list{
+        display: inline-block;
+        margin-left: 10px;
+    }
+    
+    .favourite-song{
+        margin-right: 20px;
+    }
+
+    
+
+   
+}
+
+@media (max-width: 1120px){
+
+
+    .sidebar{
+        position: fixed;
+        width: 70px;
+        z-index: 99;
+        overflow: hidden;
+        height: calc(100vh - 90px);
+        transition: width .3s ease-out;
+    }
+
+
+    .tab{
+        display: none;
+    }
+
+    .add-playlist{
+        display: none;
+    }
+
+    .main{
+        margin-left: 70px;
+    }
+
+    .header-sreach{
+        left: 70px;
+        width: calc(100% - 70px);
+        z-index: 98;
+        padding: 0 29px;
+    }
+
+    .sidebar-tiem{
+        justify-content: center;
+        padding: 15px 0;
+    }
+
+    .sidebar-tiem > span {
+        display: none;
+    }
+
+    .sidebar-icon{
+        margin: 0;
+    }
+
+    .sidebar-tiem:hover .play-icon{
+        display: none;
+    }
+
+    .sidebar-list-two__wrap:hover ~ .scroll-sidebar{
+        display: none;
+    }
+
+    .follow-singer{
+        margin: 15px 0 0 0;
+    }
+
+    .sidebar-brand{
+        padding: 0;
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        height: 70px;
+        align-items: center;
+    }
+
+    .zmp-logo{
+        width: 45px;
+        height: 45px;
+        background: url(https://zjs.zmdcdn.me/zmp3-desktop/releases/v1.7.42/static/media/icon_zing_mp3_60.f6b51045.svg) no-repeat center / contain ;;
+    }
+    
+    .feature--MV, .feature--show-lyris, .feature--regime-widow, .feature--volume{
+        margin: 0 3px;
+    }
+
+    .body-content{
+        padding: 0 29px;
+    }
+
+    .card-artist{
+        padding: 0 12px;
+    }
+
+    .btn-expanded{
+        display: flex;
+    }
+
+    .sidebar.is-expanded{
+        width: 240px;
+        box-shadow: 0 2px 5px 0 rgb(0 0 0 / 30%);
+    }
+
+    .sidebar.is-expanded .sidebar-brand{
+        width: 240px;
+        padding: 0 25px;
+        justify-content: initial;
+    }
+
+    .sidebar.is-expanded .sidebar-tiem{
+        justify-content: initial;
+        padding: 15px 25px;
+    }
+
+    .sidebar.is-expanded .sidebar-icon{
+        margin-right: 14px;
+    }
+    
+    .sidebar.is-expanded .sidebar-tiem > span {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 1024px){
+    .feature--more{
+        display: none;
+    }
+    .upload-feature{
+        display: none;
+    }
+    
+    .icon-feature-playlist{
+        font-size: 1rem;
+    }
+
+    .feature-playlist-item{
+        margin: 0;
+    }
+
+    .feature-playlist-item--play{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width:765px){
+    .header-center{
+        display: none;
+    }
+
+    .wrap-list-song{
+        min-width: 635px;
+    }
+
+    .song{
+       
+    }
+
+    .player-controls__container{
+        min-width: 768px;
+    }
+    .player-controls__song{
+        max-width: 40vw;
+    }
+
+    .btn-control{
+        flex-grow: 1;
+    }
+
+    .album > p{
+        display: none;
+    }
+    
+    .channel-card{
+        min-width: 635px;
+    }
+
+}
